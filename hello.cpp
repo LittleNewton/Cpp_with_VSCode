@@ -1,3 +1,4 @@
+#include "boo.hpp"
 #include <array>
 #include <cstdio>
 #include <fmt/core.h>
@@ -11,6 +12,13 @@ int main() {
   }
 
   printf("\n");
+
+  // test class `Boo`
+  Boo b1("John Liu");
+  Boo b2(-1);
+
+  b1.show();
+  b2.show();
 
   printf("Hello, world!\n");
   return 0;
