@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            // 参考：https://code.visualstudio.com/docs/cpp/config-msvc
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build C++",
+        }
+    ]
+}
