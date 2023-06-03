@@ -5,10 +5,12 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+            // 参考：https://github.com/microsoft/vscode-cmake-tools/tree/main/docs/README.md
+            "program": "${command:cmake.launchTargetPath}",
             "args": [],
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "Build C++",
+            "internalConsoleOptions": "neverOpen",
+            "console": "integratedTerminal",
         }
     ]
 }
